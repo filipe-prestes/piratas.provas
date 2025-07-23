@@ -6,46 +6,67 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.nio.file.*;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
 import static java.nio.file.StandardWatchEventKinds.*;
 
 public class ExcelToTxtConverter {
-    private static final DateTimeFormatter outputFormat = DateTimeFormatter.ofPattern("dd/MM/yy HH:mm");
+    private static final DateTimeFormatter outputFormat = DateTimeFormatter.ofPattern("dd/MM/yy HH:mm:ss");
 
 
     private static final String EXCEL_FILE = "C://piratas//Quadro_de_Provas.xlsx";
     private static final String TXT_FILE = "teste.txt";
 
+    private static final Path EXCEL_PATH = Paths.get("C://piratas//Quadro_de_Provas.xlsx");
+    private static final Path TXT_PATH = Paths.get("teste.txt");
+    private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+
     public static void main(String[] args) throws IOException, InterruptedException {
-        Path excelPath = Paths.get(EXCEL_FILE).toAbsolutePath();
-        Path dirToWatch = excelPath.getParent();
+        ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
+        Runnable task = () -> {
+            convertExcelToTxt(EXCEL_FILE, TXT_FILE);
+        };
 
-        WatchService watchService = FileSystems.getDefault().newWatchService();
-        dirToWatch.register(watchService, ENTRY_MODIFY);
+        scheduler.scheduleAtFixedRate(task, 0, 1, TimeUnit.SECONDS);
 
-        System.out.println("🔍 Monitorando alterações no arquivo: " + excelPath.getFileName());
+        Runtime.getRuntime().addShutdownHook(new Thread(() -> {
+            scheduler.shutdown();
+            System.out.println("Scheduler encerrado.");
+        }));
 
-        while (true) {
-            WatchKey key = watchService.take(); // espera por eventos
-
-            for (WatchEvent<?> event : key.pollEvents()) {
-                WatchEvent.Kind<?> kind = event.kind();
-
-                Path changed = (Path) event.context();
-                if (kind == ENTRY_MODIFY ) {//&& changed.toString().equals(EXCEL_FILE)
-                    //System.out.println("📄 Arquivo Excel alterado! Gerando novo TXT...");
-                    try {
-                        convertExcelToTxt(EXCEL_FILE, TXT_FILE);
-                    } catch (Exception e) {
-                        System.err.println("Erro ao converter arquivo: " + e.getMessage());
-                    }
-                }
-            }
-
-            boolean valid = key.reset();
-            if (!valid) {
-                break;
-            }
-        }
+//        Path excelPath = Paths.get(EXCEL_FILE).toAbsolutePath();
+//        Path dirToWatch = excelPath.getParent();
+//
+//        WatchService watchService = FileSystems.getDefault().newWatchService();
+//        dirToWatch.register(watchService, ENTRY_MODIFY);
+//
+//        System.out.println("🔍 Monitorando alterações no arquivo: " + excelPath.getFileName());
+//
+//        while (true) {
+//            System.out.println("teste");
+//            WatchKey key = watchService.take(); // espera por eventos
+//
+//            for (WatchEvent<?> event : key.pollEvents()) {
+//                WatchEvent.Kind<?> kind = event.kind();
+//
+//                Path changed = (Path) event.context();
+//                if (kind == ENTRY_MODIFY ) {//&& changed.toString().equals(EXCEL_FILE)
+//                    //System.out.println("📄 Arquivo Excel alterado! Gerando novo TXT...");
+//                    try {
+//                        convertExcelToTxt(EXCEL_FILE, TXT_FILE);
+//                    } catch (Exception e) {
+//                        System.err.println("Erro ao converter arquivo: " + e.getMessage());
+//                    }
+//                }
+//            }
+//
+//            boolean valid = key.reset();
+//            if (!valid) {
+//                break;
+//            }
+//        }
     }
 
     public static void convertExcelToTxt(String excelPath, String txtPath) {
@@ -71,7 +92,8 @@ public class ExcelToTxtConverter {
                         long dias = duracao.toDays();
                         long horas = duracao.minusDays(dias).toHours();
                         long minutos = duracao.minusDays(dias).minusHours(horas).toMinutes();
-                        tempoRestante = String.format("%dd %02dh %02dm", dias, horas, minutos);
+                        long seconds = duracao.getSeconds();
+                        tempoRestante = String.format("%dd %02dh %02dm %02ds", dias, horas, minutos, (seconds / 1000) % 60);
                     } else {
                         tempoRestante = "⏱ Finalizado";
                     }

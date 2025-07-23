@@ -1,0 +1,75 @@
+Entrega       | Tipo                 | Prova                                               | Tempo restante
+-------------------------------------------------------------------------------------------------------------
+06/06/25 19:00:00 | Aperitivo 05 (01-03) | Nossos Parceiros 01-03                             | ⏱ Finalizado
+08/06/25 20:00:00 | Aperitivo 03         | Se Ela Dança, Eu Danço 1                           | ⏱ Finalizado
+13/06/25 19:00:00 | Aperitivo 05 (02-03) | Nossos Parceiros 02-03                             | ⏱ Finalizado
+14/06/25 20:00:00 | Aperitivo 04         | Se Ela Dança, Eu Danço 2                           | ⏱ Finalizado
+19/06/25 18:30:00 | Aperitivo 07         | Convite de Quem manda                              | ⏱ Finalizado
+20/06/25 19:00:00 | Aperitivo 05 (03-03) | Nossos Parceiros 03-03                             | ⏱ Finalizado
+20/06/25 19:00:00 | Aperitivo 06         | Hulk com força total                               | ⏱ Finalizado
+21/06/25 18:30:00 | Aperitivo 08         | Harlem Shake - O Retorno                           | ⏱ Finalizado
+24/06/25 18:30:00 | Aperitivo 02         | Prometer Para não Cumprir                          | ⏱ Finalizado
+27/06/25 20:00:00 | Aperitivo 01         | Queremos ser Conhecidos                            | ⏱ Finalizado
+04/07/25 23:59:00 | Tarefa Surpresa 01   | Independence Day                                   | ⏱ Finalizado
+06/07/25 20:00:00 | Meme 03              | Love Time: O Retorno                               | ⏱ Finalizado
+10/07/25 20:00:00 | Tarefa Surpresa 02   | Dia da Pizza (10 de Julho)                         | ⏱ Finalizado
+12/07/25 19:50:00 | Caça 01              | Rota dos Parceiros                                 | ⏱ Finalizado
+12/07/25 20:00:00 | Tarefa Surpresa 05   | A Dança da Galinha - Turística                     | ⏱ Finalizado
+13/07/25 20:00:00 | Meme 01              | Intervenção Musical no Trânsito                    | ⏱ Finalizado
+14/07/25 20:00:00 | Tarefa Surpresa 04   | Venda a Lapa!                                      | ⏱ Finalizado
+17/07/25 20:00:00 | Filmes 04            | Festa no Apê                                       | ⏱ Finalizado
+18/07/25 20:00:00 | Meme 04              | Organizações Tabajara Apresentam...                | ⏱ Finalizado
+19/07/25 20:00:00 | Construção 07        | Plantio de Árvores Nativas                         | ⏱ Finalizado
+20/07/25 20:00:00 | Meme 02              | Intervenção Dançante na Saída da Missa             | ⏱ Finalizado
+22/07/25 20:00:00 | Filmes 03            | Missão Impossível                                  | ⏱ Finalizado
+23/07/25 20:00:00 | Filmes 02            | Duro de Matar                                      | 0d 20h 03m 12s
+24/07/25 20:00:00 | Filmes 01            | O Duelo Repórter "Onde Vivem? Do que se Alimentam? Como se Reproduzem?" | 1d 20h 03m 38s
+25/07/25 19:00:00 | Filantrópicas Total  | Filantrópicas Total                                | 2d 19h 03m 01s
+25/07/25 19:00:00 | Filantrópica 01      | Campanha do Agasalho                               | 2d 19h 03m 01s
+25/07/25 19:00:00 | Artística 03         | Palhaços em Cena: Show de Circo!                   | 2d 19h 03m 01s
+25/07/25 20:15:00 | Caracterização 04    | Charlie e Marilyn                                  | 2d 20h 18m 05s
+25/07/25 20:30:00 | Artística 08         | Desafio da Equipe                                  | 2d 20h 33m 06s
+25/07/25 21:00:00 | Filantrópica 02      | Brinquedos e Leitura                               | 2d 21h 03m 08s
+25/07/25 21:30:00 | Caracterização 09    | A Hora Delas                                       | 2d 21h 33m 10s
+25/07/25 22:00:00 | Artística 10         | O Carpinteiro Encena                               | 2d 22h 03m 12s
+25/07/25 22:45:00 | Artística 09         | Explosão Dance: O Ritmo dos Anos 80 e 90           | 2d 22h 48m 14s
+26/07/25 09:00:00 | Filantrópica 03      | Cesta Básica Solidária                             | 3d 09h 03m 51s
+26/07/25 09:00:00 | Caracterização 03    | Os Fiscais Metralhas                               | 3d 09h 03m 51s
+26/07/25 09:15:00 | Construção 01        | Máquina de Rube Goldberg                           | 3d 09h 18m 52s
+26/07/25 10:00:00 | Filantrópica 04      | Higiene Infantil                                   | 3d 10h 03m 55s
+26/07/25 10:30:00 | Caracterização 10    | Quem Vigia os Vigilantes?                          | 3d 10h 33m 57s
+26/07/25 11:00:00 | Filantrópica 05      | Proteção Animal                                    | 3d 11h 03m 59s
+26/07/25 11:30:00 | Social               | Vozes do Tempo                                     | 3d 11h 33m 00s
+26/07/25 13:00:00 | Meme 05              | Saveiro Furacão                                    | 3d 13h 03m 06s
+26/07/25 13:00:00 | Meme 06              | Saveiro Furacão 02                                 | 3d 13h 03m 06s
+26/07/25 13:15:00 | Caracterização 17    | Monster High Furacão                               | 3d 13h 18m 07s
+26/07/25 13:15:00 | Representantes 04    | Invasão Gnômica                                    | 3d 13h 18m 07s
+26/07/25 13:15:00 | Representantes 05    | Branca de Neve na Saveiro Furacão                  | 3d 13h 18m 07s
+26/07/25 14:30:00 | Caracterização 13    | Ballet do Terror                                   | 3d 14h 33m 11s
+26/07/25 14:45:00 | Caracterização 16    | O Estado Elétrico                                  | 3d 14h 48m 12s
+26/07/25 15:00:00 | Construção 04        | Autômatos na Praça                                 | 3d 15h 03m 13s
+26/07/25 15:15:00 | Busca 05             | Quem Tem, Nem Lembra!                              | 3d 15h 18m 14s
+26/07/25 16:00:00 | Artística 02         | Bonecas Dançantes em Show Coreografado             | 3d 16h 03m 17s
+26/07/25 16:30:00 | Filmes 05            | Um Clipe com Alma - Soul Bossa Nova                | 3d 16h 33m 18s
+26/07/25 16:45:00 | Filmes 06            | Twist and Shout - Reviva o Clássico!               | 3d 16h 48m 19s
+26/07/25 16:45:00 | Artística 12         | New Girls On The Block                             | 3d 16h 48m 19s
+26/07/25 17:30:00 | Artística 04         | Novela Mexicana Express Drama, Amor e Traição em 5 Minutos! | 3d 17h 33m 22s
+26/07/25 18:00:00 | Filantrópica 06      | Entrega das Doações                                | 3d 18h 03m 24s
+26/07/25 18:00:00 | Caracterização 06    | Um Encontro no mundo de Burton                     | 3d 18h 03m 24s
+26/07/25 19:00:00 | Artística 06         | Footloose: "Let's Dance!' No Palco                 | 3d 19h 03m 27s
+26/07/25 20:30:00 | Artística 05         | O Ilusionista da Gincana: O Show do Mister M (em livre adaptação) | 3d 20h 33m 33s
+27/07/25 11:00:00 | Busca 07             | Os Filhos do Dia Raro                              | 4d 11h 03m 25s
+27/07/25 13:00:00 | Artística 11         | Remexe com as Chiquititas                          | 4d 13h 03m 32s
+27/07/25 13:30:00 | Caracterização 01    | Caça-Fantasmas na Área!                            | 4d 13h 33m 34s
+27/07/25 14:00:00 | Artística 01         | Estátua Viva Flutuante                             | 4d 14h 03m 36s
+27/07/25 15:00:00 | Artística 07         | Mamma Mia! No Palco                                | 4d 15h 03m 39s
+27/07/25 15:30:00 | Caracterização 15    | Um Horloge Para Chamar de Meu                      | 4d 15h 33m 41s
+27/07/25 16:30:00 | Busca Artistas 01    | Aquele Abraço                                      | 4d 16h 33m 45s
+27/07/25 16:30:00 | Busca Artistas 02    | Abraço da Marrom                                   | 4d 16h 33m 45s
+27/07/25 16:30:00 | Busca Artistas 03    | Seu Amor Ainda é Tudo                              | 4d 16h 33m 45s
+27/07/25 16:30:00 | Busca Artistas 04    | All Star Azul                                      | 4d 16h 33m 45s
+27/07/25 16:45:00 | Busca Longa 01       | Missão Mutually Assured Destruction (MAD)          | 4d 16h 48m 46s
+27/07/25 16:45:00 | Busca Longa 04       | Missão Mutually Assured Destruction (MAD)          | 4d 16h 48m 46s
+27/07/25 16:45:00 | Busca Longa 03       | Missão Mutually Assured Destruction (MAD)          | 4d 16h 48m 46s
+27/07/25 16:45:00 | Busca Longa 05       | Missão Mutually Assured Destruction (MAD)          | 4d 16h 48m 46s
+27/07/25 16:45:00 | Busca Longa 06       | Missão Mutually Assured Destruction (MAD)          | 4d 16h 48m 46s
