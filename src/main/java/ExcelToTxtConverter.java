@@ -35,43 +35,9 @@ public class ExcelToTxtConverter {
             scheduler.shutdown();
             System.out.println("Scheduler encerrado.");
         }));
-
-//        Path excelPath = Paths.get(EXCEL_FILE).toAbsolutePath();
-//        Path dirToWatch = excelPath.getParent();
-//
-//        WatchService watchService = FileSystems.getDefault().newWatchService();
-//        dirToWatch.register(watchService, ENTRY_MODIFY);
-//
-//        System.out.println("🔍 Monitorando alterações no arquivo: " + excelPath.getFileName());
-//
-//        while (true) {
-//            System.out.println("teste");
-//            WatchKey key = watchService.take(); // espera por eventos
-//
-//            for (WatchEvent<?> event : key.pollEvents()) {
-//                WatchEvent.Kind<?> kind = event.kind();
-//
-//                Path changed = (Path) event.context();
-//                if (kind == ENTRY_MODIFY ) {//&& changed.toString().equals(EXCEL_FILE)
-//                    //System.out.println("📄 Arquivo Excel alterado! Gerando novo TXT...");
-//                    try {
-//                        convertExcelToTxt(EXCEL_FILE, TXT_FILE);
-//                    } catch (Exception e) {
-//                        System.err.println("Erro ao converter arquivo: " + e.getMessage());
-//                    }
-//                }
-//            }
-//
-//            boolean valid = key.reset();
-//            if (!valid) {
-//                break;
-//            }
-//        }
     }
 
     public static void convertExcelToTxt(String excelPath, String txtPath) {
-        //String excelFilePath = "C://piratas//Quadro_de_Provas.xlsx";
-        //String txtFilePath = "C://piratas//teste.txt";
         try (
              FileInputStream fis = new FileInputStream(excelPath);
              Workbook workbook = new XSSFWorkbook(fis);
