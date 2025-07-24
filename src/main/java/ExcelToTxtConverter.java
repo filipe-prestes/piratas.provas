@@ -5,12 +5,9 @@ import java.io.*;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.nio.file.*;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-
-import static java.nio.file.StandardWatchEventKinds.*;
 
 public class ExcelToTxtConverter {
     private static final DateTimeFormatter outputFormat = DateTimeFormatter.ofPattern("dd/MM/yy HH:mm:ss");
@@ -18,10 +15,6 @@ public class ExcelToTxtConverter {
 
     private static final String EXCEL_FILE = "C://piratas//Quadro_de_Provas.xlsx";
     private static final String TXT_FILE = "teste.txt";
-
-    private static final Path EXCEL_PATH = Paths.get("C://piratas//Quadro_de_Provas.xlsx");
-    private static final Path TXT_PATH = Paths.get("teste.txt");
-    private static final DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 
     public static void main(String[] args) throws IOException, InterruptedException {
         ScheduledExecutorService scheduler = Executors.newSingleThreadScheduledExecutor();
